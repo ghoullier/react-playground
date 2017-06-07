@@ -4,24 +4,21 @@ import logo from '../logo.svg'
 
 import * as AppStyles from './styles/App'
 
-const Header = () => (
+const Header = () =>
   <div style={AppStyles.Header}>
     <img src={logo} style={AppStyles.Logo} alt="logo" />
     <h2>Welcome to React</h2>
   </div>
-)
 
-const Intro = () => (
+const Intro = () =>
   <p style={AppStyles.Intro}>
     To get started, edit <code>src/App.js</code> and save to reload.
   </p>
-)
 
-const Home = () => (
+const Home = () =>
   <div style={AppStyles.Container}>
-    <Header/>
+    <Header />
     <Intro />
   </div>
-)
 
 export default Home

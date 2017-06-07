@@ -11,12 +11,23 @@
     "react-router-dom": "^4.1.1"
   },
   "devDependencies": {
+    "husky": "^0.13.4",
+    "lint-staged": "^3.6.0",
+    "prettier": "^1.4.2",
     "react-scripts": "1.0.7"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "precommit": "lint-staged",
+    "prettify": "prettier --no-semi --single-quote --trailing-comma all --write '{src,__{tests,mocks}__}/**/*.js'"
+  },
+  "lint-staged": {
+    "{src,__{tests,mocks}__}/**/*.js": [
+      "prettier --no-semi --single-quote --trailing-comma all --write",
+      "git add"
+    ]
   }
 }

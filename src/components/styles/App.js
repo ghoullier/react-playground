@@ -1,18 +1,18 @@
 export const Container = {
-  textAlign: 'center'
+  textAlign: 'center',
 }
 
 export const Logo = {
-  height: '80px'
+  height: '80px',
 }
 
 export const Header = {
-  'backgroundColor': '#222',
-  'height': '150px',
-  'padding': '20px',
-  'color': 'white'
+  backgroundColor: '#222',
+  height: '150px',
+  padding: '20px',
+  color: 'white',
 }
 
 export const Intro = {
-  fontSize: 'large'
+  fontSize: 'large',
 }

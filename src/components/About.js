@@ -1,15 +1,16 @@
 import React from 'react'
 
-const Title = () => (
+import Timer from './Timer'
+
+const Title = () =>
   <div>
     <h2>About</h2>
   </div>
-)
 
-const About = () => (
+const About = () =>
   <div>
-    <Title/>
+    <Title />
+    <Timer />
   </div>
-)
 
 export default About

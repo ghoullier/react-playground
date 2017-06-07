@@ -1,22 +1,17 @@
 import React from 'react'
-import {
-  BrowserRouter as Router,
-  Route,
-  Link,
-  Switch
-} from 'react-router-dom'
+import { BrowserRouter as Router, Route, Link, Switch } from 'react-router-dom'
 
 import Home from './components/Home'
 import Async from './components/Async'
 
 const About = Async({
-  loader: () => import('./components/About')
+  loader: () => import('./components/About'),
 })
 const Topics = Async({
-  loader: () => import("./components/Topics")
-});
+  loader: () => import('./components/Topics'),
+})
 
-const App = () => (
+const App = () =>
   <Router>
     <div>
       <ul>
@@ -32,6 +27,5 @@ const App = () => (
       </Switch>
     </div>
   </Router>
-)
 
 export default App
